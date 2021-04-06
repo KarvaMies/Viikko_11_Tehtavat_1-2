@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/readOnlyInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/read_only_text_field"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/readOnly"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/save_your_text_from_settings_to_make_nit_appear_here"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/readOnlyInfo"
+        app:layout_constraintStart_toStartOf="@+id/readOnlyInfo"
+        app:layout_constraintTop_toBottomOf="@+id/readOnlyInfo" />
+
+    <TextView
+        android:id="@+id/writeOnlyInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/write_only_text_field"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/readOnlyInfo"
+        app:layout_constraintStart_toStartOf="@+id/readOnlyInfo"
+        app:layout_constraintTop_toBottomOf="@+id/readOnly" />
+
+    <EditText
+        android:id="@+id/writeOnly"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:hint="@string/write_something_here"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/writeOnlyInfo"
+        app:layout_constraintStart_toStartOf="@+id/writeOnlyInfo"
+        app:layout_constraintTop_toBottomOf="@+id/writeOnlyInfo"
+        tools:ignore="RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
